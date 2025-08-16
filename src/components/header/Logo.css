@@ -1,0 +1,10 @@
+.header__logo {
+    height: 100%;
+    width: auto;
+}
+
+.header__logo img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}

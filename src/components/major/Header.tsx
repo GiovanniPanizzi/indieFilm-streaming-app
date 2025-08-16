@@ -2,6 +2,8 @@
 import Logo from './../header/Logo';
 import NavBarMain from './../header/NavBarMain';
 import SearchBar from './../header/SearchBar';
+//import styles
+import './Header.css';
 
 //header
 function Header({ className }: { className?: string }) {
@@ -10,7 +12,6 @@ function Header({ className }: { className?: string }) {
       <div className="header__container">
         <Logo className="header__logo" />
         <NavBarMain className="header__nav__bar__main" />
-        <SearchBar className="header__search__bar" />
       </div>
     </header> 
   )

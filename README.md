@@ -1,5 +1,6 @@
 ###### React + TypeScript + Vite
 #### Developing frontEnd
 
-# Indie Films Streaming App
-### Streaming Web app for publishing indie Films and creating contacts with other people who work in the independent film industry
+# INDIE FILMS 
+### streaming & networking App
+### A platform where independent filmmakers, actors, writers, and film crew can connect, share their projects and discover new talents

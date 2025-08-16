@@ -1,4 +1,8 @@
+//import pages
 import Home from './pages/Home';
+
+//import styles
+import './App.css';
 
 function App() {
   return (
@@ -6,4 +10,5 @@ function App() {
   );
 }
 
+//export component
 export default App;

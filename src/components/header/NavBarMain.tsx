@@ -1,22 +1,24 @@
+//import components
+
+//import styles
+import './NavBarMain.css';
 
 function NavBarMain({ className }: { className?: string }) {
   return (
     <nav className={className}>
+      <input type="text" placeholder="Search films, actors, directors..." />
       <ul>
         <li>
-          <a href="/home">Home</a>
+          <a href="/categories">Categories</a>
         </li>
         <li>
-          <a href="/about">About</a>
-        </li>
-        <li>
-          <a href="/services">Services</a>
+          <a href="/networking">Networking</a>
         </li>
         <li>
           <a href="/contact">Contact</a>
         </li>
         <li>
-          <a href="/blog">Blog</a>
+          <a href="/sign-in">Sign in / Log in</a>
         </li>
       </ul>
     </nav>
