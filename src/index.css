@@ -1,15 +1,25 @@
+:root {
+    --color-primary: #1c1c1c;
+    --color-primary-light: #333333;
+    --color-secondary: #f3f3f3;
+    --color-accent: #ff6f61;
+    --color-bg: #222222;
+}
+
 html, body {
     margin: 0;
     padding: 0;
-    background-color: #222222;
+    background-color: var(--color-bg);
 }
 
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    color: var(--color-secondary);
 }
 
 * {
     box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
 }

@@ -1,4 +1,5 @@
 //import components
+import { Link } from 'react-router-dom';
 
 //import styles
 import './NavBarMain.css';
@@ -9,16 +10,16 @@ function NavBarMain({ className }: { className?: string }) {
       <input type="text" placeholder="Search films, actors, directors..." />
       <ul>
         <li>
-          <a href="/categories">Categories</a>
+          <Link to="/Categories"> Categories </Link>
         </li>
         <li>
-          <a href="/networking">Networking</a>
+          <Link to="/">Networking</Link>
         </li>
         <li>
-          <a href="/contact">Contact</a>
+          <Link to="/">Contact</Link>
         </li>
         <li>
-          <a href="/sign-in">Sign in / Log in</a>
+          <Link to="/">Sign in / Log in</Link>
         </li>
       </ul>
     </nav>
