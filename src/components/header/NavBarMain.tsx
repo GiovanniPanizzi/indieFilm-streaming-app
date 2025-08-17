@@ -10,16 +10,16 @@ function NavBarMain({ className }: { className?: string }) {
       <input type="text" placeholder="Search films, actors, directors..." />
       <ul>
         <li>
-          <Link to="/Categories"> Categories </Link>
+          <Link to="/categories"> Categories </Link>
         </li>
         <li>
-          <Link to="/">Networking</Link>
+          <Link to="/network">Networking</Link>
         </li>
         <li>
-          <Link to="/">Contact</Link>
+          <Link to="/contact">Contact</Link>
         </li>
         <li>
-          <Link to="/">Sign in / Log in</Link>
+          <Link to="/sign-in">Sign in / Log in</Link>
         </li>
       </ul>
     </nav>

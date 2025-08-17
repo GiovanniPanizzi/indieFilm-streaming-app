@@ -1,7 +1,6 @@
 //import components
 import Logo from './../header/Logo';
 import NavBarMain from './../header/NavBarMain';
-import SearchBar from './../header/SearchBar';
 //import styles
 import './Header.css';
 
