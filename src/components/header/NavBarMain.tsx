@@ -4,23 +4,22 @@ import { Link } from 'react-router-dom';
 //import styles
 import './NavBarMain.css';
 
-function NavBarMain({ className }: { className?: string }) {
+type MenuItem = {
+  label: string;
+  to: string;
+  className?: string;
+};
+
+function NavBarMain({ className, items }: { className?: string, items: MenuItem[] }) {
   return (
     <nav className={className}>
       <input type="text" placeholder="Search films, actors, directors..." />
       <ul>
-        <li>
-          <Link to="/categories"> Categories </Link>
-        </li>
-        <li>
-          <Link to="/network">Networking</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-        <li>
-          <Link to="/sign-in">Sign in / Log in</Link>
-        </li>
+        {items.map((item, index) => (
+            <li key={index}>
+              <Link to={item.to} className={item.className} >{item.label}</Link>
+            </li>
+          ))}
       </ul>
     </nav>
   );

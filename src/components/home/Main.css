@@ -53,14 +53,14 @@
     font-size: 80px;
     font-weight: 700;
     margin: 0;
-    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    background: linear-gradient(90deg, #1988ff, #2b2fff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
     text-shadow: 
-    0 0 8px rgba(255, 75, 43, 0.7),
-    0 0 16px rgba(255, 65, 108, 0.5),
-    0 0 32px rgba(255, 65, 108, 0.3);
+    0 0 8px rgba(20, 149, 255, 0.7),
+    0 0 16px rgba(74, 124, 253, 0.5),
+    0 0 32px rgba(14, 88, 200, 0.3);
 }
 
 .title__and__explenation__text p {

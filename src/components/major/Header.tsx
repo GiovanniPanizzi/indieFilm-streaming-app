@@ -5,15 +5,20 @@ import NavBarMain from './../header/NavBarMain';
 import './Header.css';
 
 //header
-function Header({ className }: { className?: string }) {
+type HeaderProps = {
+  className? : string;
+  items: { label: string; to: string; className?: string;}[];
+};
+
+function Header({ className, items }: HeaderProps) {
   return (
     <header className={className}>
       <div className="header__container">
         <Logo className="header__logo" />
-        <NavBarMain className="header__nav__bar__main" />
+        <NavBarMain className="header__nav__bar__main" items={items}/>
       </div>
-    </header> 
-  )
+    </header>
+  );
 }
 
 export default Header;
