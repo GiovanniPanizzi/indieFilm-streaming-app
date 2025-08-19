@@ -1,10 +1,15 @@
+/*
+ * NavBarMain.css
+ * Styles for the main navigation bar in the header component.
+ */
+
 .header__nav__bar__main {
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-.header__nav__bar__main ul {
+.main__nav__bar__ul {
     height: 100%;
     display: flex;
     list-style: none;
@@ -12,19 +17,19 @@
     align-items: center;
 }
 
-.header__nav__bar__main ul li:hover{
+.main__nav__bar__ul li:hover{
     background-color: var(--color-primary-light);
     border-radius: 5px;
 } 
 
-.header__nav__bar__main ul li {
+.main__nav__bar__ul li {
     display: flex;
     height: 100%;
     align-items: center;
     justify-content: center;
 }
 
-.header__nav__bar__main ul li a {
+.main__nav__bar__ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,7 +61,7 @@ input:focus {
     box-shadow: 0 2px 8px rgba(0,0,0,0.25);
 }
 
-.header__nav__bar__main ul li a.header__nav__main__signIn {
+.main__nav__bar__ul li a.header__nav__main__signIn {
     color: var(--color-accent);
     text-decoration: underline;
     background: linear-gradient(90deg, #1988ff, #2b2fff);
@@ -67,4 +72,101 @@ input:focus {
     0 0 8px rgba(20, 149, 255, 0.7),
     0 0 16px rgba(74, 124, 253, 0.5),
     0 0 32px rgba(14, 88, 200, 0.3);
+}
+
+.hamburger__nav__icon {
+    display: none;
+}
+
+
+/* * Responsive styles for the navigation bar
+ * Adjusts layout and visibility for smaller screens.
+ */
+
+@media (max-width: 992px) {
+
+    /* * Hide the main navigation bar and show the hamburger icon
+     * on smaller screens.
+     */
+    .main__nav__bar__ul {
+        display: none;
+    }
+
+    /* * Show the hamburger icon and position it in the center
+     * of the header.
+     */
+     
+    input {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .hamburger__nav__icon {
+        display: block;
+        position: relative;
+        width: 32px;
+        height: 16px;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+    }
+    
+    .hamburger__nav__icon:hover {
+        transform: scale(1.1);
+    }
+    
+    /* easing for the hamburger icon lines */
+
+    .hamburger__nav__icon__line {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: var(--color-secondary);
+        border-radius: 2px;
+        transition: 
+            transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+            top 0.3s ease,
+            bottom 0.3s ease;
+    }
+    
+
+    /* Glow effect on hover */
+
+    .hamburger__nav__icon:hover .hamburger__nav__icon__line {
+        animation: glowPulse 1s infinite alternate;
+    }
+    
+    @keyframes glowPulse {
+        0% {
+            box-shadow: 0 0 6px var(--color-secondary),
+                        0 0 12px var(--color-secondary),
+                        0 0 20px var(--color-secondary);
+        }
+        100% {
+            box-shadow: 0 0 12px var(--color-secondary),
+                        0 0 24px var(--color-secondary),
+                        0 0 40px var(--color-secondary);
+        }
+    }
+    
+    /* Hamburger icon lines animation */
+    .hamburger__nav__icon__line:nth-child(1) {
+        top: 0;
+    }
+    
+    .hamburger__nav__icon__line:nth-child(2) {
+        bottom: 0;
+    }
+    
+    .hamburger__nav__icon.open .hamburger__nav__icon__line:nth-child(1) {
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+        transition-delay: 0.05s;
+    }
+    
+    .hamburger__nav__icon.open .hamburger__nav__icon__line:nth-child(2) {
+        bottom: 50%;
+        transform: translateY(50%) rotate(-45deg);
+        transition-delay: 0.1s;
+    }    
 }
