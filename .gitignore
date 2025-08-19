@@ -7,18 +7,65 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependency directories
 **/node_modules
-dist
-dist-ssr
+
+# Build output
+dist/
+dist-ssr/
+build/
+out/
 *.local
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+*.code-workspace
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.orig
+
+# C++ build artifacts
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+
+# Test and benchmark results
+tests/**/performance/**/results.json
+tests/**/performance/**/logs/
+tests/**/coverage/
+test-results/
+*.gcda
+*.gcno
+*.gcov
+
+# Node.js environment files
+.env
+.env.local
+.env.*.local
+
+# Lock files (optional, se non vuoi versionarli)
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
