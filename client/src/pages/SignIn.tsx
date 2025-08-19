@@ -1,5 +1,5 @@
 import Header from '../components/major/Header';
-import Main from '../components/network/Main';
+import Main from '../components/signIn/Main';
 import Footer from '../components/major/Footer';
 
 const menuItems = [
