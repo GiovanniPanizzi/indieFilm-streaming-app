@@ -24,7 +24,17 @@ body {
     font-family: 'Poppins', Arial, sans-serif;
 }
 
-h2 {
-    font-size: 36px;
+h1 {
+    font-size: 80px;
     font-weight: 700;
+}
+
+h2 {
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+p {
+    font-size: 2vw;
+    font-weight: 400;
 }

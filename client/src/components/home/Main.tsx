@@ -18,9 +18,9 @@ function Main({ className }: { className?: string }) {
             <div className="main__content">
                 <h2>INDIE FILMS is a platform where you can: </h2>
                 <ul className="vision__list">
-                    <li className="vision__list__li">Whatch the best indipendent films, shorts and series</li>
-                    <li className="vision__list__li">Publish your masterpieces and present your work to fellow creators</li>
-                    <li className="vision__list__li">Connect with film creatives, explore their work, and collaborate</li>
+                    <li className="vision__list__li"><h3>Whatch the best indipendent films, shorts and series</h3></li>
+                    <li className="vision__list__li"><h3>Publish your masterpieces and present your work to fellow creators</h3></li>
+                    <li className="vision__list__li"><h3>Connect with film creatives, explore their work, and collaborate</h3></li>
                 </ul>
             </div>
         </main>

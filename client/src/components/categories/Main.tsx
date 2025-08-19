@@ -9,16 +9,16 @@ function Main({ className }: { className?: string }) {
             <div className="main__container">
                 <h2>Categories</h2>
                 <ul className="categories__list">
-                    <li>Action</li>
-                    <li>Romance</li>
-                    <li>Documentary</li>
-                    <li>Science fiction</li>
-                    <li>Horror</li>
-                    <li>Comedy</li>
-                    <li>Animation</li>
-                    <li>Thriller</li>
-                    <li>Adventure</li>
-                    <li>Fantasy</li>
+                    <li><h3>Action</h3></li>
+                    <li><h3>Romance</h3></li>
+                    <li><h3>Documentary</h3></li>
+                    <li><h3>Science fiction</h3></li>
+                    <li><h3>Horror</h3></li>
+                    <li><h3>Comedy</h3></li>
+                    <li><h3>Animation</h3></li>
+                    <li><h3>Thriller</h3></li>
+                    <li><h3>Adventure</h3></li>
+                    <li><h3>Fantasy</h3></li>
                 </ul>
             </div>
         </main>
